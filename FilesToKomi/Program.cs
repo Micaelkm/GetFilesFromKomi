@@ -18,6 +18,7 @@ namespace FilesToKomi
             _logFile = string.Format("{0}\\log_{1}.txt", logfolder, DateTime.Now.ToString("yyyyMMdd_hhmm"));
             string downloadFile = ConfigurationManager.AppSettings["DOWNLOADEDDATAFILE"];
 
+
             try
             {
                 if (!Directory.Exists(docFolder)) { Directory.CreateDirectory(docFolder); }
